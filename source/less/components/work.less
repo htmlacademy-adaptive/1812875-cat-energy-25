@@ -1,4 +1,4 @@
-.work {
+.work__wrapper {
   width: 280px;
   padding: 0 20px;
   margin: 0 auto;
@@ -6,7 +6,6 @@
 }
 
 .work__title {
-  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -22,16 +21,9 @@
 }
 
 .work__list-item {
-  /*font-family: "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  color: #444444;*/
-  width: 280px;
-  height: 60px;
-  display: flex;
   margin-top: 20px;
+  padding-bottom: 4px;
+  position: relative;
 }
 
 .work__list-item-text {
@@ -42,6 +34,37 @@
   line-height: 18px;
   color: #444444;
   margin: 0;
-  padding: 2px 0 0 20px;
-  width: 199px;
+  padding: 2px 0 0 80px;
+}
+
+.work__list-item--icon-leaf::before {
+  position: absolute;
+  width: 61px;
+  height: 60px;
+  background-image: url("../img/logo/icon-leaf.svg");
+  content: "";
+}
+
+.work__list-item--icon-powder::before {
+  position: absolute;
+  width: 61px;
+  height: 60px;
+  background-image: url("../img/logo/icon-tub.svg");
+  content: "";
+}
+
+.work__list-item--icon-food::before {
+  position: absolute;
+  width: 61px;
+  height: 60px;
+  background-image: url("../img/logo/icon-eat.svg");
+  content: "";
+}
+
+.work__list-item--icon-clock::before {
+  position: absolute;
+  width: 61px;
+  height: 60px;
+  background-image: url("../img/logo/icon-alarm.svg");
+  content: "";
 }

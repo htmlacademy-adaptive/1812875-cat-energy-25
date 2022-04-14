@@ -1,19 +1,15 @@
 .example {
   background-color: #eaeaea;
-  margin: 0 auto;
   margin-top: 49px;
 }
 
 .example__title {
-  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
   color: #000000;
-  margin: 0 auto;
-  width: 280px;
-  padding: 0 20px;
+  margin: 0;
   padding-top: 25px;
 }
 
@@ -35,7 +31,6 @@
 }
 
 .example__meaning {
-  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -45,7 +40,7 @@
   border: 1px solid #cdcdcd;
   border-radius: 3px;
   width: 122px;
-  height: 40px;
+  max-height: 40px;
   padding-top: 14px;
   display: flex;
   flex-direction: column;
@@ -69,7 +64,6 @@
 }
 
 .example__expences {
-  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -82,7 +76,7 @@
 }
 
 .example__button-photo {
-  font-family: "Oswald", sans-serif;
+  font-family: inherit;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -100,8 +94,9 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 124px 124px;
+  grid-gap: 32px;
 }
 
 .example__wrapper-toggle {
@@ -114,7 +109,7 @@
   border: 0;
   cursor: pointer;
   background-color: transparent;
-  margin: 2px 5px 0 7px;
+  margin: 1px 5px 0 7px;
 }
 
 .example__wrapper-inside {
@@ -122,7 +117,6 @@
 }
 
 .example__photo {
-  padding: 0 20px;
   padding-top: 40px;
   padding-bottom: 44px;
   margin: 0 auto;
