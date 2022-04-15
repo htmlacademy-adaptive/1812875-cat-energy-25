@@ -10,16 +10,21 @@
   padding: 37px 20px 0 20px;
 }
 
-.form__wrapper {
-  width: 280px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-.form__fieldset-radio {
+.form__fieldset-pet,
+.form__fieldset-radio,
+.form__fieldset-contacts,
+.form__fieldset-comment,
+.form__fieldset-additional,
+.form__fieldset-send {
   border: none;
   padding: 0;
   margin: 0;
+}
+
+.form__fieldset-wrapper {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .form__list-radio {
@@ -56,9 +61,6 @@
 }
 
 .form__fieldset-pet {
-  border: none;
-  padding: 0;
-  margin: 0;
   margin-bottom: -15px;
 }
 
@@ -73,8 +75,6 @@
 }
 
 .form__item-radio {
-  margin: 0 auto;
-  width: 280px;
   position: relative;
   padding-bottom: 19px;
 }
@@ -88,6 +88,8 @@
   margin: 0;
   padding-top: 19px;
   padding-bottom: 19px;
+  background-color: #ffffff;
+  width: 164px;
 }
 
 .form__item-radio:nth-of-type(3) {
@@ -166,10 +168,21 @@
   content: "";
 }
 
-.form__fieldset-contacts {
-  padding: 0;
-  margin: 0;
-  border: 0;
+.form__fieldset-contacts,
+.form__fieldset-comment,
+.form__fieldset-additional {
+  position: relative;
+}
+
+.form__fieldset-contacts::after {
+  content: "";
+  position: absolute;
+  top: 27px;
+  right: 0;
+  width: 50%;
+  height: 2px;
+  background-color: #68b738;
+  z-index: -1;
 }
 
 .form__contacts {
@@ -181,6 +194,36 @@
   padding-top: 10px;
   margin: 0;
   padding-bottom: 19px;
+  background-color: #ffffff;
+  width: 201px;
+}
+
+.form__title-wrapper {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.form__fieldset-comment::after {
+  content: "";
+  position: absolute;
+  top: 24px;
+  right: 0;
+  width: 50%;
+  height: 2px;
+  background-color: #68b738;
+  z-index: -1;
+}
+
+.form__fieldset-additional::after {
+  content: "";
+  position: absolute;
+  top: 34px;
+  right: 0;
+  width: 50%;
+  height: 2px;
+  background-color: #68b738;
+  z-index: -1;
 }
 
 .form__radio-control-label {
@@ -196,12 +239,6 @@
 .form__contacts-list {
   list-style: none;
   padding: 0;
-}
-
-.form__contacts-item {
-  /*margin: 0 auto;
-  width: 280px;
-  padding: 0 20px;*/
 }
 
 .form__contacts-item:nth-of-type(2) {
@@ -250,12 +287,6 @@
   padding: 13px 44px 12px 16px;
   margin-left: 5px;
   border: 1px solid #cdcdcd;
-}
-
-.form__fieldset-comment {
-  margin: 0;
-  padding: 0;
-  border: 0;
 }
 
 .form__textarea {
@@ -332,12 +363,8 @@
   color: #000000;
   margin: 0;
   padding-top: 8px;
-}
-
-.form__fieldset-additional {
-  margin: 0;
-  padding: 0;
-  border: 0;
+  background-color: #ffffff;
+  width: 143px;
 }
 
 .form__text {
@@ -354,8 +381,5 @@
 }
 
 .form__fieldset-send {
-  padding: 0;
-  margin: 0;
-  border: 0;
   margin-bottom: -13px;
 }
