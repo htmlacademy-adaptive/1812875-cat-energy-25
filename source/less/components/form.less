@@ -1,13 +1,18 @@
-.form__title {
+.form__wrapper-title {
+  margin: 0 auto;
+  width: 280px;
+  padding: 0 20px;
+  padding-top: 23px;
+  margin-bottom: -13px;
+}
+
+.form__title-text {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
   color: #000000;
-  width: 280px;
-  margin: 0 auto;
-  padding: 37px 20px 0 20px;
 }
 
 .form__fieldset-pet,
@@ -21,6 +26,30 @@
   margin: 0;
 }
 
+.form__fieldset-radio {
+  position: relative;
+}
+
+.form__fieldset-radio::after {
+  content: "";
+  position: absolute;
+  bottom: 16px;
+  width: 100%;
+  height: 1px;
+  background-color: #d9d9d9;
+  z-index: -1;
+}
+
+.form__fieldset-radio::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  width: 100%;
+  height: 1px;
+  background-color: #d9d9d9;
+  z-index: -1;
+}
+
 .form__fieldset-wrapper {
   width: 280px;
   margin: 0 auto;
@@ -31,26 +60,6 @@
   list-style: none;
   padding: 0;
   padding-top: 9px;
-}
-
-.form::before {
-  content: "";
-  position: absolute;
-  top: 584px;
-  width: 100%;
-  height: 1px;
-  background-color: #d9d9d9;
-  z-index: -1;
-}
-
-.form::after {
-  content: "";
-  position: absolute;
-  top: 427px;
-  width: 100%;
-  height: 1px;
-  background-color: #d9d9d9;
-  z-index: -1;
 }
 
 .form__list-pet {
@@ -79,6 +88,10 @@
   padding-bottom: 19px;
 }
 
+.form__wrapper-title-additional {
+  width: 164px;
+}
+
 .form__additional {
   font-style: normal;
   font-weight: 400;
@@ -89,7 +102,6 @@
   padding-top: 19px;
   padding-bottom: 19px;
   background-color: #ffffff;
-  width: 164px;
 }
 
 .form__item-radio:nth-of-type(3) {
@@ -185,6 +197,12 @@
   z-index: -1;
 }
 
+.form__container {
+  width: 280px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
 .form__contacts {
   font-style: normal;
   font-weight: 400;
@@ -195,13 +213,10 @@
   margin: 0;
   padding-bottom: 19px;
   background-color: #ffffff;
-  width: 201px;
 }
 
-.form__title-wrapper {
-  width: 280px;
-  margin: 0 auto;
-  padding: 0 20px;
+.form__wrapper-title-contacts {
+  width: 201px;
 }
 
 .form__fieldset-comment::after {
@@ -245,28 +260,7 @@
   padding-top: 14px;
 }
 
-.form__email-label {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: #444444;
-}
-
-.form__email-input {
-  font-family: inherit;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: #444444;
-  padding: 13px 61px 12px 14px;
-  margin-left: 7px;
-  border: 1px solid #cdcdcd;
-}
-
+.form__email-label,
 .form__tel-label {
   font-style: normal;
   font-weight: 400;
@@ -274,8 +268,20 @@
   line-height: 18px;
   text-transform: uppercase;
   color: #444444;
+  display: flex;
 }
 
+.form__email-label-span {
+  padding-top: 13px;
+  width: 31%;
+}
+
+.form__tel-label-span {
+  padding-top: 13px;
+  width: 41%;
+}
+
+.form__email-input,
 .form__tel-input {
   font-family: inherit;
   font-style: normal;
@@ -284,9 +290,20 @@
   line-height: 18px;
   text-transform: uppercase;
   color: #444444;
-  padding: 13px 44px 12px 16px;
-  margin-left: 5px;
+  padding: 13px 0 12px 14px;
   border: 1px solid #cdcdcd;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+
+.form__email-input {
+  background-image: url("../img/logo/icon-mail.svg");
+  background-position: 184px 15px;
+}
+
+.form__tel-input {
+  background-image: url("../img/logo/icon-phone.svg");
+  background-position: 170px 12px;
 }
 
 .form__textarea {
@@ -297,8 +314,8 @@
   line-height: 18px;
   text-transform: uppercase;
   color: #444444;
-  width: 262px;
-  height: 138px;
+  min-width: 262px;
+  min-height: 138px;
   border: 1px solid #e7e7e7;
   resize: none;
   margin-top: 38px;
@@ -319,11 +336,11 @@
 
 .form__button {
   border: 0;
-  margin: 0;
   font-family: inherit;
   font-size: 16px;
   line-height: 20px;
   cursor: pointer;
+  width: 100%;
 }
 
 .form__radio-marker {
@@ -355,6 +372,10 @@
   bottom: 7px;
 }
 
+.form__wrapper-title-comment {
+  width: 143px;
+}
+
 .form__comment {
   font-style: normal;
   font-weight: 400;
@@ -364,7 +385,6 @@
   margin: 0;
   padding-top: 8px;
   background-color: #ffffff;
-  width: 143px;
 }
 
 .form__text {
