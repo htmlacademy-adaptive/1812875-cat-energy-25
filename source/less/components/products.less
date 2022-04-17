@@ -1,0 +1,131 @@
+.products__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.products__item {
+  border-top: 1px solid #ebebeb;
+  padding-bottom: 24px;
+}
+
+.products__wrapper-inside {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+}
+
+.products__item:last-of-type .products__wrapper-inside {
+  margin-top: 79px;
+}
+
+.products__link {
+  text-decoration: none;
+  display: grid;
+  grid-template-columns: 140px 76px;
+  padding-top: 19px;
+  padding-bottom: 13px;
+}
+
+.products__title-link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #222222;
+  margin: 0;
+  padding-top: 2px;
+}
+
+.products__table-wrapper {
+  margin-top: -70px;
+}
+
+.products__table {
+  width: 142px;
+  border-collapse: collapse;
+  margin-left: 140px;
+  margin-bottom: 22px;
+}
+
+.products__line {
+  width: 141px;
+  height: 12px;
+}
+
+.products__cell {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #444444;
+  padding: 0;
+}
+
+.products__cell--meaning {
+  text-align: end;
+}
+
+.products__button {
+  font-size: 16px;
+  line-height: 20px;
+  padding-bottom: 9px;
+}
+
+.products__more-title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #111111;
+}
+
+.products__text {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: #444444;
+  margin-top: -8px;
+  margin-bottom: 20px;
+}
+
+.products__button-all {
+  background-color: #f2f2f2;
+  font-size: 16px;
+  color: #444444;
+}
+
+.products__plus-mobile {
+  padding-left: 125px;
+  padding-top: 25px;
+  padding-bottom: 3px;
+}
+
+.products__wrapper--plus {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: -54px;
+    left: 159px;
+    width: 2px;
+    height: 30px;
+    background-color: #d3d3d3;
+  }
+
+  &::after {
+    transform: rotate(-90deg);
+  }
+}
+
+.products__item--more {
+  border-bottom: 1px solid #ebebeb;
+}
