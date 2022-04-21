@@ -9,18 +9,48 @@
   line-height: 40px;
   color: #000000;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-top: 45px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 71px;
+  }
 }
 
 .work__list {
   list-style: none;
   margin: 40px 0 0 0;
   padding: 0;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 59px;
+    grid-row-gap: 37px;
+    margin: 72px 0 0 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 80px;
+  }
 }
 
 .work__list-item {
   margin-top: 20px;
   padding-bottom: 4px;
   position: relative;
+
+  @media (min-width: @tablet-width) {
+    width: 245px;
+    height: 280px;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .work__list-item-text {
@@ -32,36 +62,162 @@
   color: #444444;
   margin: 0;
   padding: 2px 0 0 80px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 112px 0 0 0;
+  }
 }
 
 .work__list-item--icon-leaf::before {
   position: absolute;
+  bottom: 0;
   width: 61px;
   height: 60px;
   background-image: url("../img/logo/icon-leaf.svg");
   content: "";
+
+  @media (min-width: @tablet-width) {
+    bottom: 200px;
+    width: 80px;
+    height: 80px;
+    background-image: url("../img/logo/tablet/icon-leaf.svg");
+  }
+}
+
+.work__list-item--icon-leaf::after {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    position: absolute;
+    left: 118px;
+    top: -39px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 280px;
+    line-height: 280px;
+    color: #f2f2f2;
+    content: "1";
+    width: 130px;
+    height: 280px;
+    z-index: -1;
+  }
 }
 
 .work__list-item--icon-powder::before {
   position: absolute;
+  bottom: 0;
   width: 61px;
   height: 60px;
   background-image: url("../img/logo/icon-tub.svg");
   content: "";
+
+  @media (min-width: @tablet-width) {
+    bottom: 200px;
+    width: 80px;
+    height: 80px;
+    background-image: url("../img/logo/tablet/icon-tub.svg");
+  }
+}
+
+.work__list-item--icon-powder::after {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    position: absolute;
+    left: 112px;
+    top: -39px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 280px;
+    line-height: 280px;
+    color: #f2f2f2;
+    content: "2";
+    width: 130px;
+    height: 280px;
+    z-index: -1;
+  }
 }
 
 .work__list-item--icon-food::before {
   position: absolute;
+  bottom: 0;
   width: 61px;
   height: 60px;
   background-image: url("../img/logo/icon-eat.svg");
   content: "";
+
+  @media (min-width: @tablet-width) {
+    bottom: 200px;
+    width: 80px;
+    height: 80px;
+    background-image: url("../img/logo/tablet/icon-eat.svg");
+  }
+}
+
+.work__list-item--icon-food::after {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    position: absolute;
+    left: 113px;
+    top: -39px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 280px;
+    line-height: 280px;
+    color: #f2f2f2;
+    content: "3";
+    width: 130px;
+    height: 280px;
+    z-index: -1;
+  }
 }
 
 .work__list-item--icon-clock::before {
   position: absolute;
+  bottom: 0;
   width: 61px;
   height: 60px;
   background-image: url("../img/logo/icon-alarm.svg");
   content: "";
+
+  @media (min-width: @tablet-width) {
+    bottom: 200px;
+    width: 80px;
+    height: 80px;
+    background-image: url("../img/logo/tablet/icon-alarm.svg");
+  }
+}
+
+.work__list-item--icon-clock::after {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    position: absolute;
+    left: 114px;
+    top: -39px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 280px;
+    line-height: 280px;
+    color: #f2f2f2;
+    content: "4";
+    width: 130px;
+    height: 280px;
+    z-index: -1;
+  }
+}
+
+.work__br {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
 }
