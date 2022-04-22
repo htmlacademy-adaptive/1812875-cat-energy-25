@@ -11,6 +11,7 @@
   @media (min-width: @desktop-width) {
     border: 0;
     margin-top: -14px;
+    background: linear-gradient(to bottom, transparent 179px, #f2f2f2 179px, #f2f2f2 641px);
   }
 }
 
@@ -368,15 +369,12 @@
   @media (min-width: @tablet-width) {
     margin-top: 0;
     position: relative;
-    background-image: url("../img/photos/tablet/grey.svg");
+    background: linear-gradient(to bottom, transparent 255px, #eaeaea 255px, #eaeaea 716px,);
     min-height: 716px;
-    background-repeat: repeat-x;
-    background-position-y: 255px;
-    z-index: 1;
+    z-index: 0;
   }
 
   @media (min-width: @desktop-width) {
-    z-index: -1;
-    background-image: url("../img/photos/desktop/grey.svg");
+    background: 0;
   }
 }

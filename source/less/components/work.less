@@ -32,6 +32,7 @@
     grid-column-gap: 59px;
     grid-row-gap: 37px;
     margin: 72px 0 0 0;
+    counter-reset: work;
   }
 
   @media (min-width: @desktop-width) {
@@ -50,6 +51,7 @@
     height: 280px;
     margin: 0;
     padding: 0;
+    counter-increment: work;
   }
 }
 
@@ -99,7 +101,8 @@
     font-size: 280px;
     line-height: 280px;
     color: #f2f2f2;
-    content: "1";
+    /*content: "1";*/
+    content: counter(work);
     width: 130px;
     height: 280px;
     z-index: -1;
@@ -135,7 +138,7 @@
     font-size: 280px;
     line-height: 280px;
     color: #f2f2f2;
-    content: "2";
+    content: counter(work);
     width: 130px;
     height: 280px;
     z-index: -1;
@@ -171,7 +174,7 @@
     font-size: 280px;
     line-height: 280px;
     color: #f2f2f2;
-    content: "3";
+    content: counter(work);
     width: 130px;
     height: 280px;
     z-index: -1;
@@ -207,7 +210,7 @@
     font-size: 280px;
     line-height: 280px;
     color: #f2f2f2;
-    content: "4";
+    content: counter(work);
     width: 130px;
     height: 280px;
     z-index: -1;
