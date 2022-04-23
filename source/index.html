@@ -2,22 +2,25 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
-    <header class="page-header">
+    <header class="page-header page-header--open">
       <div class="page-header__container">
-        <a class="page-header__logo">
-          <img class="page-header__image" src="img/logo/kat-logo-mobile.svg" alt="Логотип Кэт энерджи" width="190" height="38">
-        </a>
-        <nav class="main-navigation toggle__open">
-          <button class="main-navigation__toggle" type="button">
+        <div class="page-header__container-link">
+          <a class="page-header__logo">
+            <span class="visually-hidden">Ссылка Кэт энерджи.</span>
+          </a>
+          <button class="page-header__toggle" type="button">
             <span class="visually-hidden">Открыть-закрыть меню.</span>
           </button>
+        </div>
+        <nav class="main-navigation">
           <ul class="main-navigation__list main-navigation__list-none">
             <li class="main-navigation__item">
-              <a class="main-navigation__link main-navigation__link--active">главная</a>
+              <a class="main-navigation__link main-navigation__link--active-index">главная</a>
             </li>
             <li class="main-navigation__item">
               <a class="main-navigation__link" href="catalog.html">каталог продукции</a>
@@ -31,12 +34,11 @@
     </header>
     <main class="page-main">
       <section class="food">
-        <div class="food__wrapper container__cat">
-          <h1 class="container__title">Функциональное питание для котов</h1>
-          <h2 class="container__title-slogan">Занялся собой? Займись котом!</h2>
+        <div class="food__wrapper container">
+          <h1 class="food__title">Функциональное<br> питание для котов</h1>
+          <h2 class="food__title-slogan">Занялся собой? Займись котом!</h2>
         </div>
         <div class="food__wrapper-cat-energy">
-          <img class="food__cat-energy-mobile-food" src="img/photos/mobile/cat-energy-mobile-food.png" width="280" height="270" alt="Еда для кошек.">
           <a class="food__button button" href="catalog.html">подобрать программу</a>
         </div>
       </section>
@@ -85,22 +87,22 @@
               <p class="work__list-item-text">Замените один-два приема обычной еды на наше функциональное питание.</p>
             </li>
             <li class="work__list-item work__list-item--icon-clock">
-              <p class="work__list-item-text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+              <p class="work__list-item-text">Уже через месяц наслаждайтесь изменениями к лучшему<br class="work__br"> вашего питомца!</p>
             </li>
           </ul>
         </div>
       </section>
       <section class="example">
-        <div class="example__wrapper container">
+        <div class="example__wrapper-top container">
           <h2 class="example__title">Живой пример</h2>
         </div>
-        <div class="example__wrapper container">
-          <p class="example__about">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+        <div class="example__wrapper-center">
+          <p class="example__about">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и<br class="example__about-br"> по-прежнему спит по 16 часов в день.</p>
           <div class="example__wrapper-inside">
             <ul class="example__list">
               <li class="exaple-item">
                 <p class="example__meaning">5 КГ
-                  <span class="example__indicator">снижение <br>веса</span>
+                  <span class="example__indicator">снижение <br class="example__indicator-br">веса</span>
                 </p>
               </li>
               <li class="exaple-item">
@@ -118,16 +120,13 @@
               </span>
             </p>
           </div>
+        </div>
+        <div class="example__wrapper-bottom">
           <div class="example__photo">
-            <img class="example__cat-mobile" src="img/photos/mobile/cat-mobile.png" alt="Толстый кот." width="280" height="232">
             <div class="example__wrapper-toggle">
               <button class="example__button-photo" type="button">было</button>
               <button class="example__button-toggle" type="button">
                 <span class="visually-hidden">Кнопка переключения фото кота.</span>
-                <svg width="86" height="14" viewBox="0 0 86 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect x="0.5" y="0.5" width="84.5769" height="13" rx="5.5" fill="white" stroke="#CDCDCD"/>
-                  <rect x="6.11284" y="4" width="35.657" height="6" rx="3" fill="#68B738"/>
-                </svg>
               </button>
               <button class="example__button-photo" type="button">стало</button>
             </div>
@@ -147,7 +146,7 @@
         <div class="map__wrapper"></div>
       </div>
       <div class="page-footer__wrapper-bottom">
-        <div class="page-footer__container">
+        <div class="page-footer__bottom container">
           <div class="page-footer__wrapper-link-kat">
             <a class="page-footer__logo-link" href="#">
               <svg class="page-footer__logo" width="129" height="25" fill="none" xmlns="http://www.w3.org/2000/svg">

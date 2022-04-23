@@ -2,19 +2,22 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
-    <header class="page-header">
+    <header class="page-header page-header--open">
       <div class="page-header__container">
-        <a class="page-header__logo">
-          <img class="page-header__image" src="img/logo/kat-logo-mobile.svg" alt="Логотип Кэт энерджи" width="190" height="38">
-        </a>
-        <nav class="main-navigation toggle__open">
-          <button class="main-navigation__toggle" type="button">
+        <div class="page-header__container-link">
+          <a class="page-header__logo">
+            <span class="visually-hidden">Ссылка Кэт энерджи.</span>
+          </a>
+          <button class="page-header__toggle" type="button">
             <span class="visually-hidden">Открыть-закрыть меню.</span>
           </button>
+        </div>
+        <nav class="main-navigation">
           <ul class="main-navigation__list main-navigation__list-none">
             <li class="main-navigation__item">
               <a class="main-navigation__link" href="index.html">главная</a>
@@ -31,7 +34,7 @@
     </header>
     <main class="page-main">
       <div class="page-main__wrapper-border-top">
-        <div class="page-main__container">
+        <div class="page-main__container container">
           <h1 class="page-main__title">Подбор программы</h1>
         </div>
       </div>
@@ -41,7 +44,7 @@
         </div>
         <form class="form__wrapper" action="https://echo.htmlacademy.ru/" method="post">
           <fieldset class="form__fieldset-pet">
-            <div class="form__fieldset-wrapper">
+            <div class="form__fieldset-wrapper container">
               <ul class="form__list-pet">
                 <li class="form__item">
                   <label class="form__label-text">
@@ -65,7 +68,7 @@
             </div>
           </fieldset>
           <fieldset class="form__fieldset-radio">
-            <div class="form__fieldset-wrapper">
+            <div class="form__fieldset-wrapper container">
               <ul class="form__list-radio">
                 <li class="form__item-radio">
                   <label class="form__radio-label">
@@ -92,12 +95,12 @@
             </div>
           </fieldset>
           <fieldset class="form__fieldset-contacts">
-            <div class="form__container">
+            <div class="form__container container">
               <div class="form__wrapper-title-contacts">
                 <h2 class="form__contacts">Контактные данные<br> (владельца кота)</h2>
               </div>
             </div>
-            <div class="form__fieldset-wrapper">
+            <div class="form__fieldset-wrapper container">
               <ul class="form__contacts-list">
                 <li class="form__contacts-item">
                   <label class="form__email-label" for="mail">
@@ -115,12 +118,12 @@
             </div>
           </fieldset>
           <fieldset class="form__fieldset-comment">
-            <div class="form__container">
+            <div class="form__container container">
               <div class="form__wrapper-title-comment">
                 <h2 class="form__comment">Комментарий</h2>
               </div>
             </div>
-            <div class="form__fieldset-wrapper">
+            <div class="form__fieldset-wrapper container">
               <div class="form__comment-wrapper">
                 <label class="form__label-textarea visually-hidden" for="comment">Комментарий</label>
                 <textarea class="form__textarea" placeholder="Расскажите обо всех повадках кота" id="comment"></textarea>
@@ -128,12 +131,12 @@
             </div>
           </fieldset>
           <fieldset class="form__fieldset-additional">
-            <div class="form__container">
+            <div class="form__container container">
               <div class="form__wrapper-title-additional">
                 <h2 class="form__additional">Дополнительно</h2>
               </div>
             </div>
-            <div class="form__fieldset-wrapper">
+            <div class="form__fieldset-wrapper container">
               <ul class="form__list-checkbox">
                 <li class="form__item-checkbox">
                   <label class="form__checkbox-label">
@@ -167,7 +170,7 @@
             </div>
           </fieldset>
           <fieldset class="form__fieldset-send">
-            <div class="form__fieldset-wrapper">
+            <div class="form__fieldset-wrapper container">
               <div class="form__wrapper-send">
                 <button class="form__button button" type="submit">отправить заявку</button>
                 <p class="form__text">* — Обязательные поля</p>
@@ -177,7 +180,7 @@
         </form>
       </section>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer page-footer--grey">
       <div class="page-footer__wrapper-top map">
         <div class="map__wrapper-address map__padding-top">
           <h2 class="map__title">приглашаем<br> к сотрудничеству дилеров!</h2>
@@ -189,7 +192,7 @@
         <div class="map__wrapper"></div>
       </div>
       <div class="page-footer__wrapper-bottom">
-        <div class="page-footer__container">
+        <div class="page-footer__bottom container">
           <div class="page-footer__wrapper-link-kat">
             <a class="page-footer__logo-link" href="#">
               <svg class="page-footer__logo" width="129" height="25" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -2,19 +2,22 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
-    <header class="page-header">
+    <header class="page-header page-header--open">
       <div class="page-header__container">
-        <a class="page-header__logo">
-          <img class="page-header__image" src="img/logo/kat-logo-mobile.svg" alt="Логотип Кэт энерджи" width="190" height="38">
-        </a>
-        <nav class="main-navigation toggle__open">
-          <button class="main-navigation__toggle" type="button">
+        <div class="page-header__container-link">
+          <a class="page-header__logo">
+            <span class="visually-hidden">Ссылка Кэт энерджи.</span>
+          </a>
+          <button class="page-header__toggle" type="button">
             <span class="visually-hidden">Открыть-закрыть меню.</span>
           </button>
+        </div>
+        <nav class="main-navigation">
           <ul class="main-navigation__list main-navigation__list-none">
             <li class="main-navigation__item">
               <a class="main-navigation__link" href="index.html">главная</a>
@@ -31,7 +34,7 @@
     </header>
     <main class="page-main">
       <div class="page-main__wrapper-border-top">
-        <div class="page-main__container">
+        <div class="page-main__container container">
           <h1 class="page-main__title page-main__title--catalog">Каталог продукции</h1>
         </div>
       </div>
@@ -277,7 +280,7 @@
         </div>
       </section>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer page-footer--grey">
       <div class="page-footer__wrapper-top map">
         <div class="map__wrapper-address map__padding-top">
           <h2 class="map__title">приглашаем<br> к сотрудничеству дилеров!</h2>
@@ -289,7 +292,7 @@
         <div class="map__wrapper"></div>
       </div>
       <div class="page-footer__wrapper-bottom">
-        <div class="page-footer__container">
+        <div class="page-footer__bottom container">
           <div class="page-footer__wrapper-link-kat">
             <a class="page-footer__logo-link" href="#">
               <svg class="page-footer__logo" width="129" height="25" fill="none" xmlns="http://www.w3.org/2000/svg">
