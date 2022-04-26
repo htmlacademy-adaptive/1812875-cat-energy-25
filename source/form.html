@@ -35,7 +35,7 @@
     <main class="page-main">
       <div class="page-main__wrapper-border-top">
         <div class="page-main__container container">
-          <h1 class="page-main__title">Подбор программы</h1>
+          <h1 class="page-main__title page-main__title--form">Подбор программы</h1>
         </div>
       </div>
       <section class="form">
@@ -43,8 +43,10 @@
           <p class="form__title-text">Заполните анкету, и мы подберем<br> программу питания для вашего кота</p>
         </div>
         <form class="form__wrapper" action="https://echo.htmlacademy.ru/" method="post">
+
+          <div class="form__container-double">
           <fieldset class="form__fieldset-pet">
-            <div class="form__fieldset-wrapper container">
+            <div class="form__fieldset-wrapper-name">
               <ul class="form__list-pet">
                 <li class="form__item">
                   <label class="form__label-text">
@@ -68,7 +70,7 @@
             </div>
           </fieldset>
           <fieldset class="form__fieldset-radio">
-            <div class="form__fieldset-wrapper container">
+            <div class="form__fieldset-wrapper-radio">
               <ul class="form__list-radio">
                 <li class="form__item-radio">
                   <label class="form__radio-label">
@@ -94,10 +96,12 @@
               </ul>
             </div>
           </fieldset>
+          </div>
+
           <fieldset class="form__fieldset-contacts">
             <div class="form__container container">
               <div class="form__wrapper-title-contacts">
-                <h2 class="form__contacts">Контактные данные<br> (владельца кота)</h2>
+                <h2 class="form__contacts">Контактные данные<br class="form__contacts-br"> (владельца кота)</h2>
               </div>
             </div>
             <div class="form__fieldset-wrapper container">

@@ -1,10 +1,52 @@
-.food__wrapper {
+.food__wrapper-top {
   background-image: url("../img/photos/mobile/cat.jpg");
   background-repeat: no-repeat;
   min-height: 302px;
 
   @media (min-width: @tablet-width) {
     background-image: none;
+  }
+}
+
+.food__wrapper-bottom {
+  position: relative;
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 198px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 594px;
+    width: 708px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 329px;
+  }
+}
+
+.food__wrapper-cat-energy {
+  position: absolute;
+  background-image: url("../img/photos/mobile/cat-energy-mobile-food.png");
+  width: 280px;
+  z-index: 2;
+  bottom: -178px;
+  min-height: 313px;
+  background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/photos/tablet/cat-energy-tablet-food.jpg");
+    width: 708px;
+    min-height: 609px;
+    bottom: -564px;
+    left: -1px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/photos/desktop/cat-energy-desktop-food.png");
+    left: 192px;
+    top: -279px;
+    width: 552px;
+    height: 499px;
   }
 }
 
@@ -100,50 +142,8 @@
   }
 }
 
-.food__wrapper-cat-energy {
-  position: relative;
-  width: 280px;
-  margin: 0 auto;
-
-  @media (min-width: @tablet-width) {
-    margin-bottom: 594px;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin-bottom: 329px;
-  }
-}
-
-.food__wrapper-cat-energy::after {
-  content: "";
-  position: absolute;
-  bottom: 43px;
-  left: 0;
-  width: 280px;
-  background-image: url("../img/photos/mobile/cat-energy-mobile-food.png");
-  height: 270px;
-  background-repeat: no-repeat;
-  z-index: 2;
-
-  @media (min-width: @tablet-width) {
-    left: -215px;
-    top: -45px;
-    background-image: url("../img/photos/tablet/cat-energy-tablet-food.jpg");
-    width: 708px;
-    height: 608px;
-  }
-
-  @media (min-width: @desktop-width) {
-    background-image: url("../img/photos/desktop/cat-energy-desktop-food.png");
-    left: -22px;
-    top: -279px;
-    width: 552px;
-    height: 499px;
-  }
-}
-
 .food__button {
-  margin-top: 138px;
+  margin-top: 273px;
   font-size: 14px;
   line-height: 18px;
   padding-top: 11px;
@@ -154,16 +154,16 @@
     line-height: 20px;
     width: 244px;
     position: absolute;
-    top: -14px;
-    left: -124px;
+    top: 31px;
+    left: 91px;
     padding: 17px 0;
     margin-top: -2px;
     z-index: 3;
   }
 
   @media (min-width: @desktop-width) {
-    top: 37px;
-    left: -390px;
+    top: 316px;
+    left: -368px;
   }
 }
 
