@@ -45,9 +45,14 @@
     bottom: 8px;
     left: 0;
   }
+
+  @media (min-width: @desktop-width) {
+    bottom: 10px;
+    left: 2px;
+  }
 }
 
-.main-navigation__link--active-index::before {
+.main-navigation__link-index--active::before {
   @media (min-width: @tablet-width) {
     position: absolute;
     content: "";
@@ -62,7 +67,6 @@
     background-color: #ffffff;
     bottom: 10px;
     left: 2px;
-    width: 68px;
   }
 }
 
@@ -98,7 +102,6 @@
   @media (min-width: @desktop-width) {
     font-size: 20px;
     line-height: 30px;
-    color: #ffffff;
   }
 }
 
