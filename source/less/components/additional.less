@@ -229,9 +229,19 @@
   }
 }
 
-.additional__wrapper {
+.additional__wrapper-top {
   @media (min-width: @desktop-width) {
     position: relative;
+  }
+}
+
+.additional__wrapper-bottom {
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 895px 246px;
+    grid-gap: 80px;
+    overflow: hidden;
+    margin-bottom: -35px;
   }
 }
 
@@ -255,13 +265,16 @@
 
   @media (min-width: @desktop-width) {
     background-image: url("../img/photos/desktop/bag-desktop.png");
-    width: 1220px;
+    width: 246px;
     min-height: 289px;
-    display: flex;
-    justify-content: end;
-    background-position: 974px 0;
     margin-top: -289px;
-    z-index: -1;
+  }
+}
+
+.additional__wraper-bag--logo {
+  @media (min-width: @desktop-width) {
+    width: 246px;
+    margin-top: 80px;
   }
 }
 

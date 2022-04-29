@@ -201,6 +201,10 @@
   @media (min-width: @tablet-width) {
     margin-left: -5px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 2px;
+  }
 }
 
 .example__button-photo::before {
@@ -208,10 +212,22 @@
     position: absolute;
     content: "";
     height: 2px;
-    border-bottom: 1px dotted #b8b8b8;
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.24);
     bottom: 0;
     left: 5px;
     width: 46px;
+  }
+}
+
+.example__button-photo:hover::before {
+  @media (min-width: @tablet-width) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.24);
+  }
+}
+
+.example__button-photo:active::before {
+  @media (min-width: @tablet-width) {
+    border-bottom: 0;
   }
 }
 
@@ -268,6 +284,20 @@
 
   @media (min-width: @desktop-width) {
     margin: -2px -3px -8px 211px;
+  }
+}
+
+.example__button-toggle:hover {
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/photos/tablet/slider-control-hover.svg");
+    margin: -2px 4px -8px 210px;
+  }
+}
+
+.example__button-toggle:active {
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/photos/tablet/slider-control-active.svg");
+    margin: -2px 4px -8px 209px;
   }
 }
 

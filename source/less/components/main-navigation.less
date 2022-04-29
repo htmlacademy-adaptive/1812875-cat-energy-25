@@ -52,24 +52,6 @@
   }
 }
 
-.main-navigation__link-index--active::before {
-  @media (min-width: @tablet-width) {
-    position: absolute;
-    content: "";
-    height: 2px;
-    background-color: #68b738;
-    right: 0;
-    bottom: 8px;
-    left: 0;
-  }
-
-  @media (min-width: @desktop-width) {
-    background-color: #ffffff;
-    bottom: 10px;
-    left: 2px;
-  }
-}
-
 .main-navigation__item:nth-of-type(3) .main-navigation__link {
   border-bottom: 1px solid #e6e6e6;
 
@@ -102,6 +84,43 @@
   @media (min-width: @desktop-width) {
     font-size: 20px;
     line-height: 30px;
+  }
+}
+
+.main-navigation__link:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.main-navigation__link:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.main-navigation__link--color {
+  @media (min-width: @desktop-width) {
+    color: #ffffff;
+  }
+}
+
+.main-navigation__link--color:hover {
+  @media (min-width: @desktop-width) {
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.main-navigation__link--color:active {
+  @media (min-width: @desktop-width) {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.main-navigation__link--color::before {
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    content: "";
+    height: 2px;
+    background-color: #ffffff;
+    bottom: 10px;
+    left: 2px;
   }
 }
 
