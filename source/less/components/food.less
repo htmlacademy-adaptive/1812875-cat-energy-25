@@ -68,14 +68,17 @@
     position: absolute;
     top: 0;
     right: 0;
-    width: 50%;
     height: 694px;
+    background-image: url("../img/photos/desktop/cat.jpg");
+    background-repeat: no-repeat;
+    z-index: -1;
+    width: 50%;
+    background-size: cover;
     background-color: rgba(104, 183, 56, 0.85);
-    z-index: 0;
   }
 }
 
-.food::before {
+/*.food::before {
   @media (min-width: @desktop-width) {
     content: "";
     position: absolute;
@@ -87,8 +90,9 @@
     z-index: -1;
     width: 50%;
     background-size: cover;
+    background-color: rgba(104, 183, 56, 0.85);
   }
-}
+}*/
 
 .food__title {
   font-style: normal;
