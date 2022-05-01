@@ -6,6 +6,7 @@
 
 .page-header__container {
   display: block;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     display: grid;
@@ -58,6 +59,14 @@
     background-image: url("../img/logo/cat-logo-desktop.svg");
     min-height: 10px;
   }
+}
+
+.page-header__logo:hover {
+  opacity: 0.8;
+}
+
+.page-header__logo:active {
+  opacity: 0.6;
 }
 
 .page-header__logo-mobile {
