@@ -291,6 +291,22 @@
   }
 }
 
+.form__input-text:hover {
+  border: 1px solid #cdcdcd;
+}
+
+.form__input-text:focus {
+  border: 1px solid transparent;
+  outline: 2px solid #444444;
+  outline-offset: -2px;
+}
+
+.form__input-text:invalid {
+  border: 1px solid transparent;
+  outline: 2px solid #ff8282;
+  outline-offset: -2px;
+}
+
 .form__item:nth-of-type(1) .form__label-text-span {
   padding-top: 13px;
   width: 24%;
@@ -343,7 +359,7 @@
   height: 28px;
   border: 1px solid #cdcdcd;
   border-radius: 1px;
-  bottom: -3px;
+  bottom: -4px;
 
   @media (min-width: @tablet-width) {
     width: 38px;
@@ -352,18 +368,45 @@
   }
 }
 
+.form__checkbox-mark:hover {
+  border: 1px solid #bababa;
+}
+
+.form__checkbox-mark:active {
+  border: 1px solid rgba(186, 186, 186, 0.3);
+}
+
 .form__checkbox-input[type="checkbox"]:checked + .form__checkbox-mark::before {
   position: absolute;
   top: 7px;
   left: 5px;
   width: 18px;
   height: 14px;
-  background-image: url("../img/logo/checkbox-mobile.svg");
+  background-image: url("../img/logo/checkbox.svg");
+  background-size: cover;
   background-repeat: no-repeat;
   content: "";
 
   @media (min-width: @tablet-width) {
-    background-image: url("../img/logo/checkbox-tablet.svg");
+    top: 10px;
+    left: 7px;
+    width: 24px;
+    height: 19px;
+  }
+}
+
+.form__checkbox-mark:active::before {
+  position: absolute;
+  top: 7px;
+  left: 5px;
+  width: 18px;
+  height: 14px;
+  background-image: url("../img/logo/checkbox-active.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  content: "";
+
+  @media (min-width: @tablet-width) {
     top: 10px;
     left: 7px;
     width: 24px;
@@ -512,7 +555,11 @@
 }
 
 .form__contacts-item:nth-of-type(2) {
-  padding-top: 20px;
+  padding-top: 13px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 20px;
+  }
 
   @media (min-width: @desktop-width) {
     padding-top: 0;
@@ -587,6 +634,25 @@
   }
 }
 
+.form__email-input:hover,
+.form__tel-input:hover {
+  border: 1px solid #cdcdcd;
+}
+
+.form__email-input:focus,
+.form__tel-input:focus {
+  border: 1px solid transparent;
+  outline-offset: -2px;
+  outline: 2px solid #444444;
+}
+
+.form__email-input:invalid,
+.form__tel-input:invalid {
+  border: 1px solid transparent;
+  outline: 2px solid #ff8282;
+  outline-offset: -2px;
+}
+
 .form__email-input {
   background-image: url("../img/logo/icon-mail.svg");
   background-position: 184px 15px;
@@ -600,8 +666,60 @@
   }
 }
 
+.form__email-input:focus {
+  background-image: url("../img/logo/icon-mail-green.svg");
+  background-position: 184px 15px;
+
+  @media (min-width: @tablet-width) {
+    background-position: 512px 17px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-position: 447px 17px;
+  }
+}
+
+.form__email-input:invalid {
+  background-image: url("../img/logo/icon-mail-pink.svg");
+  background-position: 184px 15px;
+
+  @media (min-width: @tablet-width) {
+    background-position: 512px 17px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-position: 447px 17px;
+  }
+}
+
 .form__tel-input {
   background-image: url("../img/logo/icon-phone.svg");
+  background-position: 170px 12px;
+
+  @media (min-width: @tablet-width) {
+    background-position: 497px 15px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-position: 435px 14px;
+  }
+}
+
+.form__tel-input:focus {
+  background-image: url("../img/logo/icon-phone-green.svg");
+  background-position: 170px 12px;
+
+  @media (min-width: @tablet-width) {
+    background-position: 497px 15px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-position: 435px 14px;
+  }
+}
+
+.form__tel-input:invalid {
+  background-image: url("../img/logo/icon-phone-pink.svg");
   background-position: 170px 12px;
 
   @media (min-width: @tablet-width) {
@@ -646,6 +764,22 @@
   }
 }
 
+.form__textarea:hover {
+  border: 1px solid #cdcdcd;
+}
+
+.form__textarea:focus {
+  border: 1px solid transparent;
+  outline-offset: -2px;
+  outline: 2px solid #444444;
+}
+
+.form__textarea:invalid {
+  border: 1px solid transparent;
+  outline: 2px solid #ff8282;
+  outline-offset: -2px;
+}
+
 .form__checkbox-control-label {
   font-style: normal;
   font-weight: 400;
@@ -670,6 +804,8 @@
   line-height: 20px;
   cursor: pointer;
   width: 100%;
+  padding: 10px 0 10px 0;
+  margin-top: 2px;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -708,6 +844,24 @@
   height: 13px;
   border-radius: 50%;
   background-color: #68b738;
+  content: "";
+  left: 8px;
+  bottom: 7px;
+
+  @media (min-width: @tablet-width) {
+    width: 18px;
+    height: 18px;
+    left: 10px;
+    top: 10px;
+  }
+}
+
+.form__radio-marker:active::before {
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: rgba(104, 183, 56, 0.3);
   content: "";
   left: 8px;
   bottom: 7px;
