@@ -9,7 +9,7 @@
 
   @media (min-width: @desktop-width) {
     margin-top: 92px;
-    margin-bottom: 86px;
+    margin-bottom: 51px;
   }
 }
 
@@ -241,7 +241,6 @@
     grid-template-columns: 895px 246px;
     grid-gap: 80px;
     overflow: hidden;
-    margin-bottom: -35px;
   }
 }
 
@@ -256,11 +255,21 @@
   position: relative;
   z-index: 1;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/photos/mobile/bag-mobile@2x.png");
+    background-size: 280px auto;
+  }
+
   @media (min-width: @tablet-width) {
     background-image: url("../img/photos/tablet/bag-tablet.png");
     width: 707px;
     min-height: 200px;
     margin-top: 69px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/photos/tablet/bag-tablet@2x.png");
+      background-size: 707px auto;
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -268,6 +277,11 @@
     width: 246px;
     min-height: 289px;
     margin-top: -289px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/photos/desktop/bag-desktop@2x.png");
+      background-size: 246px auto;
+    }
   }
 }
 
@@ -314,7 +328,7 @@
 
   @media (min-width: @desktop-width) {
     top: 56px;
-    left: 1058px;
+    left: 84px;
   }
 }
 
