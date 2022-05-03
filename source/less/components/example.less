@@ -380,12 +380,22 @@
   left: 20px;
   background-image: url("../img/photos/mobile/cat-mobile.png");
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/photos/mobile/cat-mobile@2x.png");
+    background-size: 280px auto;
+  }
+
   @media (min-width: @tablet-width) {
     width: 296px;
     height: 511px;
     background-image: url("../img/photos/tablet/cat-fat.png");
     top: 85px;
     left: 21px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/photos/tablet/cat-fat@2x.png");
+      background-size: 296px auto;
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -404,6 +414,11 @@
     content: "";
     top: 85px;
     right: 19px;
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/photos/tablet/cat-skinny@2x.png");
+    background-size: 296px auto;
   }
 
   @media (min-width: @desktop-width) {

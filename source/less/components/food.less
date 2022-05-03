@@ -2,6 +2,12 @@
   background-image: url("../img/photos/mobile/cat.jpg");
   background-repeat: no-repeat;
   min-height: 302px;
+  width: 320px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/photos/mobile/cat@2x.jpg");
+    background-size: 320px auto;
+  }
 
   @media (min-width: @tablet-width) {
     background-image: none;
@@ -33,12 +39,22 @@
   min-height: 313px;
   background-repeat: no-repeat;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/photos/mobile/cat-energy-mobile-food@2x.png");
+    background-size: 280px auto;
+  }
+
   @media (min-width: @tablet-width) {
     background-image: url("../img/photos/tablet/cat-energy-tablet-food.jpg");
     width: 708px;
     min-height: 609px;
     bottom: -564px;
     left: -1px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/photos/tablet/cat-energy-tablet-food@2x.jpg");
+      background-size: 708px auto;
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -47,6 +63,11 @@
     top: -279px;
     width: 552px;
     height: 499px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/photos/desktop/cat-energy-desktop-food@2x.png");
+      background-size: 552px auto;
+    }
   }
 }
 
@@ -75,24 +96,12 @@
     width: 50%;
     background-size: cover;
     background-color: rgba(104, 183, 56, 0.85);
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/photos/desktop/cat@2x.jpg");
+    }
   }
 }
-
-/*.food::before {
-  @media (min-width: @desktop-width) {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 694px;
-    background-image: url("../img/photos/desktop/cat.jpg");
-    background-repeat: no-repeat;
-    z-index: -1;
-    width: 50%;
-    background-size: cover;
-    background-color: rgba(104, 183, 56, 0.85);
-  }
-}*/
 
 .food__title {
   font-style: normal;
