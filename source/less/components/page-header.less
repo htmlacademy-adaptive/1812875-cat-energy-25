@@ -1,5 +1,4 @@
 .page-header {
-  /*z-index: 2;*/
   z-index: 3;
   position: relative;
 }
@@ -45,8 +44,8 @@
 .page-header__logo {
   display: block;
   cursor: pointer;
-  max-height: 38px;
-  padding: 48px 0 17px 0;
+  height: 65px;
+  width: 190px;
   background-image: url("../img/logo/cat-logo-mobile.svg");
   background-repeat: no-repeat;
   background-position: 0 10px;
@@ -57,7 +56,8 @@
 
   @media (min-width: @desktop-width) {
     background-image: url("../img/logo/cat-logo-desktop.svg");
-    min-height: 10px;
+    width: 202px;
+    height: 70px;
   }
 }
 
