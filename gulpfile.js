@@ -70,18 +70,18 @@ const createWebp = () => {
 // SVG
 
 const svg = () =>
-  gulp.src(['source/img/*.svg', 'source/img/logo/*.svg'])
+  gulp.src(['source/img/**/*.svg', '!source/img/icons/*.svg'])
     .pipe(svgo())
-    .pipe(gulp.dest('build/img/logo'));
+    .pipe(gulp.dest('build/img'));
 
 const sprite = () => {
-  return gulp.src('source/img/*.svg')
-    .pipe(svgo())
-    .pipe(svgstore({
-      inlineSvg: true
-    }))
-    .pipe(rename('sprite.svg'))
-    .pipe(gulp.dest('build/img'));
+return gulp.src('source/img/icons/*.svg')
+  .pipe(svgo())
+  .pipe(svgstore({
+  inlineSvg: true
+  }))
+  .pipe(rename('sprite.svg'))
+  .pipe(gulp.dest('build/img'));
 }
 
 // Copy
@@ -138,7 +138,6 @@ export const build = gulp.series(
   clean,
   copy,
   optimizeImages,
-  copyImages,
   gulp.parallel(
   styles,
   html,
@@ -154,7 +153,6 @@ export const build = gulp.series(
 export default gulp.series(
   clean,
   copy,
-  optimizeImages,
   copyImages,
   gulp.parallel(
     styles,
