@@ -19,6 +19,7 @@
   list-style: none;
   margin-bottom: 0;
   margin-top: 0;
+  padding: 0;
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -131,6 +132,14 @@
   display: none;
   padding: 0;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
+}
+
+.main-navigation__list-nojs {
+  display: block;
 
   @media (min-width: @tablet-width) {
     display: flex;
