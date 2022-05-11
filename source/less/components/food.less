@@ -2,7 +2,7 @@
   background-image: url("../img/photos/mobile/cat.jpg");
   background-repeat: no-repeat;
   min-height: 302px;
-  width: 320px;
+  /*width: 320px;*/
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/photos/mobile/cat@2x.jpg");
@@ -100,6 +100,18 @@
     @media (min-resolution: 2dppx) {
       background-image: url("../img/photos/desktop/cat-desktop@2x.jpg");
     }
+  }
+}
+
+.food--nojs::after {
+  top: 264px;
+
+  @media (min-width: @tablet-width) {
+    background-color: transparent;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 0;
   }
 }
 
